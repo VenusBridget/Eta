@@ -1,0 +1,80 @@
+{
+    "destinations": [
+        {
+            "id": "6",
+            "name": "Amboseli",
+            "location": "Kenya",
+            "capacity": 10,
+            "tickets_sold": 5,
+            "price": "Ksh. 70,000 pp",
+            "days": "3 days",
+            "date": "12th August",
+            "prebook": "12% off for book before June",
+            "info": "Amboseli National Park is one of the best wildlife-viewing destinations in the world, with the view of mt. Longonot and hosts different types of animals including the Big five.",
+            "image": "https://media.istockphoto.com/id/1205779274/photo/elephants-in-tsavo-east-and-amboseli-national-park-in-kenya.jpg?s=612x612&w=0&k=20&c=h0TNg9L9v4eEJo8gN1hy_ZnY0mXBhbPmfyh-wBC9zPM="
+        },
+        {
+            "id": "1",
+            "name": "Mombasa",
+            "location": "Kenya",
+            "capacity": 10,
+            "tickets_sold": 9,
+            "price": "Ksh. 30,000 pp",
+            "days": "3 days",
+            "info": "Mombasa is the largest city on the Kenyan coast and combines city excitement with beach relaxation. The coastal area features nearly 500 kilometres of tranquil white beaches, golden sand dunes, warm aqua water and idyllic secluded islands.",
+            "image": "https://t4.ftcdn.net/jpg/05/62/55/73/360_F_562557397_K4v0doCFQFhiwdsnNtpqa5CWsy7D1yTB.jpg"
+        },
+        {
+            "id": "2",
+            "name": "Queen Elizabeth National Park",
+            "location": "Uganda",
+            "capacity": 10,
+            "tickets_sold": 8,
+            "price": "$ 600 pp",
+            "days": "4 days",
+            "date": "20th October",
+            "prebook": "10% off book before July",
+            "info": "QENP is in the Western Region of Uganda.The park is known for its abundant wildlife, including African elephant, African buffalo, Ugandan kob, hippopotamus, topi, waterbuck, warthog, giant forest hog, Nile crocodile, leopard, spotted hyena, chimpanzee and lion.",
+            "image": "https://www.akageranationalparkrwanda.org/wp-content/uploads/2024/03/gAME-cVRW-2.jpg"
+        },
+        {
+            "id": "3",
+            "name": "Zanzibar",
+            "location": "Tanzania",
+            "capacity": 10,
+            "tickets_sold": 8,
+            "price": "$ 1,000 pp",
+            "days": "5 days",
+            "date": "20th October",
+            "prebook": "10% off book before July",
+            "info": "Zanzibar Island is known as Africa's tropical paradise, offering the world's most beautiful beaches. Here, you find miles and miles of white sandy beaches dotted with palm trees, surrounded by the clear azure water of the Indian Ocean.",
+            "image": "https://media.istockphoto.com/id/1297190187/photo/aerial-view-of-the-fishing-boats-on-tropical-sea-coast-with-sandy-beach-at-sunset-summer.jpg?s=612x612&w=0&k=20&c=WZzA_1pmxQEJ5eTLTgFnoOxn_t2SBqQnmmBmxK6pWog="
+        },
+        {
+            "id": "4",
+            "name": "Cape Town",
+            "location": "South Africa",
+            "capacity": 10,
+            "tickets_sold": 2,
+            "price": "$ 1,700 pp",
+            "days": "7 days",
+            "date": "20th December",
+            "prebook": "20% off book before September",
+            "info": "Famous for its sun, sea and scenery, Cape Town is a beloved tourist destination for visitors the world over. It's, therefore, no surprise that this coastal gem has been voted the best city in the world seven-years-running!",
+            "image": "https://mybroadband.co.za/news/wp-content/uploads/2013/03/Cape-Town.jpg"
+        },
+        {
+            "id": "5",
+            "name": "Dubai",
+            "location": "UAE",
+            "capacity": 10,
+            "tickets_sold": 4,
+            "price": "$ 2,000 pp",
+            "days": "5 days",
+            "date": "10th December",
+            "prebook": "25% off book before August",
+            "info": "Dubai is a city of skyscrapers, ports, and beaches, where big business takes place alongside sun-seeking tourism.",
+            "image": "https://static.toiimg.com/thumb/width-600,height-400,msid-22509870.cms"
+        }
+    ]
+}
