@@ -6,6 +6,11 @@
     padding: 0;
 }
 
+html, body{
+    width: 100%;
+
+}
+
 /* Header */
 header {
     position: fixed;
@@ -187,15 +192,90 @@ ul a:hover {
 
 .destination-card {
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     overflow: hidden;
     transition: transform 0.3s;
 }
 
+.destination-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    position: relative;
+}
+
+.destination-card_img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for all images */
+    overflow: hidden; /* Ensures images don’t overflow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.destination-card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fit the container without distortion */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.extra.content {
+    margin-top: auto; /* Pushes the button to the bottom */
+}
+
+.favorite-btn {
+    background: transparent;
+    border: 1px solid burlywood;
+    color: burlywood;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.favorite-btn.favorited {
+    background: burlywood;
+    color: white;
+    border: none;
+}
+
+.buy-ticket {
+    border:rgba(0, 0, 0, 0);
+    cursor: pointer;
+    width: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+    background: burlywood;
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.buy-ticket:hover{
+    background: grey;
+    color: black;
+}
+
+.buy-ticket:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
 .destination-card:hover {
     transform: scale(1.05);
+}
+
+h2{
+    padding-bottom: 8%;
+    padding-top: 5%;
 }
 
 /* Services Section */
@@ -208,21 +288,30 @@ ul a:hover {
     font-weight: bold;
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 85vh;
 }
 
 /* Contact Section */
 .contact {
     text-align: center;
     font-size: 18px;
-    padding: 40px 10%;
+    padding: 40px;
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 85vh;
+}
+
+.contact-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: burlywood;
+    padding-top: 100px;
+    gap: 100px;
 }
 
 /* Login Form */
-.login-form-container {
+.auth-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -257,6 +346,45 @@ ul a:hover {
     width: 100%;
 }
 
+#sign-up-form{
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    height: 90%;
+}
+
+#sign-up-form input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+#sign-up-form button{
+    background: burlywood;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.welcome-content{
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.welcome-content h1{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
 /* Responsive Adjustments */
 @media screen and (max-width: 480px) {
     .logo {
@@ -269,3 +397,4 @@ ul a:hover {
         font-size: 16px;
     }
 }
+

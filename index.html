@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
     <title>Eta Adventures</title>
 </head>
 
@@ -14,7 +17,6 @@
         <div class="logo">
             <h1>
                 <span1>eta </span1>Adventures
-
             </h1>
         </div>
 
@@ -24,7 +26,7 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="icons">
-            <a href="#login-form"><i class="fas fa-user"></i></a>
+            <a href="#auth-container"><i class="fas fa-user"></i></a>
         </div>
     </header>
 
@@ -53,36 +55,41 @@
         <h2>
             <span1>SERVICES</span1>
         </h2>
-        <p>Some of the services we offer include:</p>
-        <p>Hotel Booking, Air BnB Booking, Bus and Flight Ticket Booking,</p>
-        <p>Car hire services, Transport, Tour Guide</p>
-        <p>and many more.</p>
+        <ul>
+            <li>Hotel Booking</li>
+            <li>Air BnB Booking</li>
+            <li>Bus and Flight Ticket Booking</li>
+            <li>Car hire services </li>
+            <li>Transport </li>
+            <li>Tour Guide</li>
+            <li>Airport pickup</li>
+            <p>and many more.</p>
+        </ul>
     </section>
 
     <section id="contact" class="contact">
-        <h3>
+        <h2>
             <span1>CONTACT US</span1>
-        </h3>
+        </h2>
         <div class="contacts">
             <p>Call us: 020-511-6782</p>
             <p>Email: etadventures1@gmail.com</p>
             <p>Instagram: etadventures1</p>
         </div>
+        <div class="contact-icons">
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
     </section>
 
-    <div class="login-form-container">
-        <form id="login-form">
-            <h2><span>LOGIN</span></h2>
-            <input type="text" id="userName" placeholder="Enter username">
-            <input type="password" id="password" placeholder="Enter password">
-            <button class="btn" type="submit">Login</button>
-            <h3>
-                <span1>Welcome!</span>
-            </h3>
-        </form>
-    </div>
+    <!-- FIX: Authentication container (JS will populate this) -->
+    <div class="auth-container" id="auth-container"></div>
 
     <script src="./index.js"></script>
+
 </body>
 
 </html>
