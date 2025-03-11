@@ -9,12 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("https://eta-json.onrender.com/destinations")
     .then(response => response.json())
     .then(data => {
-      console.log(data); // Check if data is loading correctly
-      // Update UI with fetched data
+        console.log("Fetched Data:", data); // Confirm data is loaded
+        allDestinations = data; // Store fetched data globally
+        displayDestinations(allDestinations); // Display data on the page
     })
     .catch(error => console.error("Error fetching data:", error));
   
-
     // Function to display destinations
     function displayDestinations(destinations) {
         popularDestinations.innerHTML = "";
