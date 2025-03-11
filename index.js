@@ -6,13 +6,14 @@ document.addEventListener("DOMContentLoaded", () => {
     let favorites = JSON.parse(localStorage.getItem("favorites")) || []; // Retrieve favorites from localStorage
 
     // Fetch destinations from server and store globally
-    fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            allDestinations = data;
-            displayDestinations(data);
-        })
-        .catch(error => console.error("Error fetching data:", error));
+    fetch("https://eta-json.onrender.com")
+    .then(response => response.json())
+    .then(data => {
+      console.log(data); // Check if data is loading correctly
+      // Update UI with fetched data
+    })
+    .catch(error => console.error("Error fetching data:", error));
+  
 
     // Function to display destinations
     function displayDestinations(destinations) {
