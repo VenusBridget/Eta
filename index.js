@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let favorites = JSON.parse(localStorage.getItem("favorites")) || []; // Retrieve favorites from localStorage
 
     // Fetch destinations from server and store globally
-    fetch("https://eta-json.onrender.com")
+    fetch("https://eta-json.onrender.com/destinations")
     .then(response => response.json())
     .then(data => {
       console.log(data); // Check if data is loading correctly
